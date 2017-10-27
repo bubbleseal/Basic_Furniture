@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="/stylesheets/header_stylesheet.css"/>
+        <link type="text/css" rel="stylesheet" href="/stylesheets/mainpage_stylesheet.css"/>
+        <link type="text/css" rel="stylesheet" href="/stylesheets/feeback_stylesheet.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <script src="/JS/feedback_val.js"></script>
+
+    </head>
+    <body class="home"> 
+        <div class="page">
+            <div class="header">
+                <header class="header">
+                    <a href="/" class="logo">
+                        <img src="/logo.png" height="150px"/>
+                    </a>
+                    <div id="header" class="header">
+                        <ul class="header">
+                            <li class="menu_item">
+                                <a href="/kitchen_catalog.php" class="menu_item">
+                                    <img src="/head_kitchen.jpg" height="70px"/>
+                                </a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="/bathroom_catalog.php" class="menu_item">
+                                    <img src="/head_bath.jpg" height="70px"/>
+                                </a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="/living_catalog.php" class="menu_item">
+                                    <img src="/head_living.jpg" height="70"/>
+                                </a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="/bedroom_catalog.php" class="menu_item">
+                                    <img src="/head_bedroom.jpg" height="70"/>
+                                </a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="/light_catalog.php" class="menu_item">
+                                    <img src="/head_lighting.jpg" height="70"/>
+                                </a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="/deco_catalog.php" class="menu_item">
+                                    <img src="/head_deco.jpg" height="70"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="second_header">
+                            <li class="search-only">
+                                <div class="search-box">
+                                    <div class="search-container">
+                                        <form action="search.php" method="post">
+                                            <input class="search" name="k" type="text" placeholder="Search products" />
+                                            <input type="submit" value="Go"/>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="secondmenu_item">
+                                <a href="/register.php" class="secondmenu_item">
+                                    <img src="/head_signup.png" height="20"/>
+                                </a>
+                            </li>
+                            <li class="secondmenu_item">
+                                <a href="/login.php" class="secondmenu_item">
+                                    <img src="/head_login.png" height="20"/>
+                                </a>
+                            </li>
+                            <li class="secondmenu_item">
+                                <a href="/cart.php" class="secondmenu_item">
+                                    <img src="/cart.png" height="20"/>
+                                </a>	
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+            </div>
+            <center class="main">
+                <h1 class="main-title">SIMPLE, YET SIGNIFICANT</h1>
+                <img src="/sofa_main.png" class="main"/>
+            </center>
+            <hr/>
+            <center class="about-container">
+                <h1 class="title">U ORDER, WE DELIVER</h1>
+                <h2 class="support-title">BASIC is an online furniture store that provides minimalistic home furniture for comfort and style.</h2>
+                <div class="about-img">
+                    <img class="about-bg" src="/office_bg.png"/>
+                    <div class="about-p">
+                        <h1 class="mini-title">Our Mission</h1>
+                        <p class="company-p"> 
+                            Founder in 2014, BASIC was founded with a rebellious spirit and a lofty objective: <br/><br/>To help people furnish their homes by offering stylish designer furnitures in the most convenient way possible to people, via the net.  
+                        </p>
+                    </div>
+                </div>
+            </center>
+            <hr/>
+            <center class="team-container">	
+                <h1 class="title">BEHIND OUR DOORS</h1>
+                <h2 class="support-title">BASIC houses a team of multi-talented individuals to bring you the best and satisfactory services.</h2>
+                <div class="team-container">
+                    <img class="team" src="/joshua.png">
+                    <p class="team-description"><b>Joshua Ng</b><br/>Managing Director<br/>Sings in the bath</p>
+                </div>
+                <div class="team-container">
+                    <img class="team" src="/simone.png">
+                    <p class="team-description"><b>Simone Chong</b><br/>Advertising Director<br/>Smiles at random people</p>
+                </div>
+                <div class="team-container">
+                    <img class="team" src="/vincent.png">
+                    <p class="team-description"><b>Vincent Lim</b><br/>Business Development Director</br>Can't resist cute animals</p>
+                </div>
+                <div class="team-container">
+                    <img class="team" src="/shep.png">
+                    <p class="team-description"><b>Shep</b><br/>Moral Support Director<br/>Love lying on human laps</p>
+                </div>
+            </center>
+            <hr/>
+
+            <center class="feedback-container">
+                <h1 class="title">COME & SAY HI</h1>
+                <h2 class="support-title">We would love to hear from you to provide better services and products for you in near future.</h2>
+                <div id="form-div">
+                    <p class="company-p"> 
+                        9, Jalan Taming Empat, Taming Jaya Industrial Park, <br/>Balakong, 43300, Selangor D.E.<br/><br/>
+                        03-5164 8484 <br/><br/> contact@basiconline.com
+                    </p>
+                    <form onsubmit="return validateEmail();" action="feedbacksave.php" method="post" >
+                        <p class="tags">Name</p>
+                        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" id="name" required />
+                        <p class="tags">Email</p>
+                        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" />
+                        <p class="tags">Comment</p>
+                        <textarea name="comment" class="validate[required,length[6,300]] feedback-input" id="comment" required></textarea>
+                        <div class="submit">
+                            <input type="submit" value="SEND" id="button-blue"/>
+                            <div class="ease"></div>
+                        </div>
+                    </form>	
+                </div>
+            </center>
+
+            <hr/>
+            <div class="footer">	
+                <footer class="footer">
+                    <small>
+                        <b>Updated 2015 Basic company. </b>
+                    </small>
+                </footer>
+            </div>
+        </div>		
+    </body>
+</html>

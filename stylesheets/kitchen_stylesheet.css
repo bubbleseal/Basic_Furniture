@@ -1,0 +1,21 @@
+center.con{
+	display: block;
+	padding-top: 320px;
+	z-index: -1;
+	position: relative;
+}
+h1.main-title{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 60px;
+	height:100px;
+	letter-spacing: 10px;
+	color: #a1a1a1;
+	text-shadow: 1px -2px 2px #797979;
+}
+img.main {
+	width: 950px;
+	z-index: 1;
+	position:relative;
+	padding-bottom: 80px;
+}

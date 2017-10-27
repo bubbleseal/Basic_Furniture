@@ -1,0 +1,10 @@
+These are sets of instructions to import the database into your computer.
+Once you have copied text file which is (furnitureshop.sql) in the computer, you 
+can now start following the procedures.
+
+1) Open phpMyAdmin (if it's under xampp, run the control panel and start MYSQL and click on admin)
+2) Click on the database. Make sure that you have the database in your computer.
+3) If there is no database there, create one and name it "furnitureshop".
+4) Click on the database.
+5) Click on import.
+6) Select the SQL file provided and click GO.

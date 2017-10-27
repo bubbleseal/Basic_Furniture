@@ -1,0 +1,89 @@
+center.con{
+	display: block;
+	padding-top: 200px;
+	z-index: -1;
+	position: relative;
+}
+center.container{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	height: 500px;
+}
+div.ind-container{
+	position: relative;
+	top: 0px;
+	float: left;
+	width: 33.33%;
+	height: 320px;
+}
+div.text-con{
+	position: relative;
+	max-height: 120px;
+	height: 120px;
+	overflow: hidden;
+}
+div.add-button{
+	height: 50px;
+}
+h1.main-title{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 60px;
+	height:80px;
+	letter-spacing: 10px;
+	color: #a1a1a1;
+	text-shadow: 1px -2px 2px #797979;
+}
+p.description{
+	font-size: 16px;
+	font-family: 'myriad pro', sans-serif;
+	color: #434343;
+	padding: 5px;
+	padding-bottom: 30px;
+	margin: 0;
+}
+img.main {
+	width: 950px;
+	z-index: 1;
+	position:relative;
+	padding-bottom: 80px;
+}
+img.img{
+	width: 250px;
+}
+input.add{
+	cursor: pointer;
+	background-color: white;
+	color: #434343;
+	height: 30px;
+	width: 120px;
+	border-radius: 8px;
+	border-color: #a1a1a1;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+.logo_icon {
+    display: block;
+	min-height: 250px;
+	max-height: 250px;
+} 
+.text {
+    display: none;
+	width: 220px;
+	min-height: 250px;
+	max-height: 250px;
+	padding: 20px;
+	padding-top: 30px;
+	font-family: 'myriad pro', sans-serif;
+	color: #434343;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+#image a:hover .logo_icon{
+    display: none;
+}
+#image a:hover .text{
+    display: block;
+}
